@@ -12,4 +12,4 @@
   `srun --ntasks=9 --nodes=1 --overcommit --partition=i7-7700 ./mm-mpi 256`
 
 ## Exercise 12
-* Check the number of PUs on the node, and limit the number of workers to be 1 less than that. 
+* []
