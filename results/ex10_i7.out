@@ -1,0 +1,40 @@
+ --- Process 1 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e1398738/T08/./mm-mpi <size>
+ +++ Process 4 (on soctf-pdc-011.comp.nus.edu.sg) is master
+Multiplying matrix size 2048 x 2048
+ --- Process 2 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ --- Process 0 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 4, rows_per_worker 512 
+ --- WORKER 0: Received row [0-511] of matrix A
+ +++ MASTER : Finished sending row [0-511] of matrix A to process 0
+ --- WORKER 0: Receiving all 2048 rows for matrix B...
+ --- WORKER 1: Received row [512-1023] of matrix A
+ +++ MASTER : Finished sending row [512-1023] of matrix A to process 1
+ --- WORKER 1: Receiving all 2048 rows for matrix B...
+ --- WORKER 2: Received row [1024-1535] of matrix A
+ +++ MASTER : Finished sending row [1024-1535] of matrix A to process 2
+ --- WORKER 2: Receiving all 2048 rows for matrix B...
+ --- WORKER 3: Received row [1536-2047] of matrix A
+ +++ MASTER : Finished sending row [1536-2047] of matrix A to process 3
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 3: Receiving all 2048 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 3: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 1: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  0.23 seconds; computation_time= 32.59 seconds
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  0.28 seconds; computation_time= 32.55 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  0.45 seconds; computation_time= 32.38 seconds
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  0.46 seconds; computation_time= 32.37 seconds
+ --- MASTER 4 (on soctf-pdc-011.comp.nus.edu.sg): total time= 32.83 seconds

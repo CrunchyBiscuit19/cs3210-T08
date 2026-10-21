@@ -1,0 +1,72 @@
+ --- Process 0 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ --- Process 7 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+Usage: /nfs/home/e1398738/T08/./mm-mpi <size>
+ +++ Process 8 (on soctf-pdc-011.comp.nus.edu.sg) is master
+Multiplying matrix size 256 x 256
+ --- Process 4 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ --- Process 5 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ --- Process 3 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ --- Process 6 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ --- Process 2 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ --- Process 1 (on soctf-pdc-011.comp.nus.edu.sg) is worker
+ +++ MASTER : Distributing matrix A to workers: workers 8, rows_per_worker 32 
+ --- WORKER 0: Received row [0-31] of matrix A
+ +++ MASTER : Finished sending row [0-31] of matrix A to process 0
+ --- WORKER 1: Received row [32-63] of matrix A
+ +++ MASTER : Finished sending row [32-63] of matrix A to process 1
+ --- WORKER 0: Receiving all 256 rows for matrix B...
+ --- WORKER 2: Received row [64-95] of matrix A
+ +++ MASTER : Finished sending row [64-95] of matrix A to process 2
+ --- WORKER 1: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Received row [96-127] of matrix A
+ +++ MASTER : Finished sending row [96-127] of matrix A to process 3
+ --- WORKER 2: Receiving all 256 rows for matrix B...
+ --- WORKER 3: Receiving all 256 rows for matrix B...
+ --- WORKER 4: Received row [128-159] of matrix A
+ +++ MASTER : Finished sending row [128-159] of matrix A to process 4
+ --- WORKER 5: Received row [160-191] of matrix A
+ +++ MASTER : Finished sending row [160-191] of matrix A to process 5
+ --- WORKER 4: Receiving all 256 rows for matrix B...
+ --- WORKER 6: Received row [192-223] of matrix A
+ +++ MASTER : Finished sending row [192-223] of matrix A to process 6
+ --- WORKER 7: Received row [224-255] of matrix A
+ +++ MASTER : Finished sending row [224-255] of matrix A to process 7
+ --- WORKER 5: Receiving all 256 rows for matrix B...
+ --- WORKER 6: Receiving all 256 rows for matrix B...
+ +++ MASTER : Sending matrix B to all workers
+ --- WORKER 7: Receiving all 256 rows for matrix B...
+ --- WORKER 0: Received matrix B
+ --- WORKER 1: Received matrix B
+ --- WORKER 2: Received matrix B
+ --- WORKER 3: Received matrix B
+ --- WORKER 4: Received matrix B
+ --- WORKER 5: Received matrix B
+ --- WORKER 6: Received matrix B
+ --- WORKER 7: Received matrix B
+ +++ MASTER : Finished sending matrix B to all workers
+ +++ MASTER: Receiving the results from workers
+ --- WORKER 1: Finished the computations
+ --- WORKER 1: Sent the results back
+ --- WORKER 1 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  1.53 seconds; computation_time=  0.02 seconds
+ --- WORKER 3: Finished the computations
+ --- WORKER 3: Sent the results back
+ --- WORKER 3 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  1.53 seconds; computation_time=  0.02 seconds
+ --- WORKER 4: Finished the computations
+ --- WORKER 2: Finished the computations
+ --- WORKER 0: Finished the computations
+ --- WORKER 4: Sent the results back
+ --- WORKER 4 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  1.53 seconds; computation_time=  0.02 seconds
+ --- WORKER 2: Sent the results back
+ --- WORKER 2 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  1.53 seconds; computation_time=  0.02 seconds
+ --- WORKER 0: Sent the results back
+ --- WORKER 0 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  1.53 seconds; computation_time=  0.02 seconds
+ --- WORKER 5: Finished the computations
+ --- WORKER 5: Sent the results back
+ --- WORKER 5 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  1.54 seconds; computation_time=  0.02 seconds
+ --- WORKER 7: Finished the computations
+ --- WORKER 7: Sent the results back
+ --- WORKER 7 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  1.54 seconds; computation_time=  0.02 seconds
+ --- WORKER 6: Finished the computations
+ --- WORKER 6: Sent the results back
+ --- WORKER 6 (on soctf-pdc-011.comp.nus.edu.sg): communication_time=  1.54 seconds; computation_time=  0.02 seconds
+ --- MASTER 8 (on soctf-pdc-011.comp.nus.edu.sg): total time=  1.56 seconds
