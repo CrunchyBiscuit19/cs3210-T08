@@ -12,7 +12,7 @@
 RUNS=5
 SIZE=2048
 NAME=mixed
-CSV=ex10_${NAME}.csv
+CSV="results/ex10_${NAME}.csv"
 LOGDIR=ex10_logs
 
 cd "$SLURM_SUBMIT_DIR"

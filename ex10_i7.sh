@@ -11,7 +11,7 @@
 RUNS=5
 SIZE=2048
 NAME=i7
-CSV=ex10_${NAME}.csv
+CSV="results/ex10_${NAME}.csv"
 LOGDIR=ex10_logs
 
 cd "$SLURM_SUBMIT_DIR"

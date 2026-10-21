@@ -12,7 +12,7 @@
 RUNS=5
 SIZE=256
 NAME=n9
-CSV=ex11_${NAME}.csv
+CSV="results/ex11_${NAME}.csv"
 LOGDIR=ex11_logs
 
 cd "$SLURM_SUBMIT_DIR"
